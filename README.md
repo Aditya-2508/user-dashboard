@@ -6,10 +6,10 @@ This project is a React-based User Management Dashboard built for a technical as
 ## 📸 Screenshots
 
 ### Login & Registration
-![Login Screen](./screenshots/login.png)
+![Login Screen](./screenshots/Login.png)
 
 ### Main Dashboard (CRUD & Filters)
-![Dashboard](./screenshots/dashboard1.png)
+![Dashboard](./screenshots/Dashboard1 .png)
 
 ## 🛠️ Setup & Execution Instructions
 1. Clone this repository to your local machine.
