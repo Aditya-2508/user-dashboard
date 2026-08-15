@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# 📊 User Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Project Overview
+This project is a React-based User Management Dashboard built for a technical assessment. It features user registration, secure authentication routing, and full CRUD operations with cascading location filters.
 
-## Available Scripts
+## 📸 Screenshots
 
-In the project directory, you can run:
+### Login & Registration
+![Login Screen](./screenshots/login.png)
 
-### `npm start`
+### Main Dashboard (CRUD & Filters)
+![Dashboard](./screenshots/dashboard1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Setup & Execution Instructions
+1. Clone this repository to your local machine.
+2. Open your terminal and navigate into the project directory.
+3. Run `npm install` to install all dependencies (including `react-router-dom`).
+4. Run `npm start` to launch the development server.
+5. The application will automatically open at `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Architectural Decisions & Mock API
+* **Database:** I utilized the browser's native `localStorage` as a mock database. This ensures data persistence across page reloads while providing a seamless, "zero-setup" experience for the review process (no need to configure a separate backend server).
+* **State Management:** I implemented `useReducer` for complex state logic (specifically for the editing forms and filtering functionality) to maintain clean and predictable component updates.
+* **Routing:** Handled via `react-router-dom`, including basic route protection to prevent unauthorized access to the dashboard.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✨ Implemented Features
+* **Authentication:** Full registration and login flow with credential validation.
+* **Cascading Data:** Structured hierarchical location data (Country → State → City) dynamically integrated into both the Registration form and Dashboard filters.
+* **Dashboard CRUD:** Complete functionality to view, filter, update (inline), and delete user records.
